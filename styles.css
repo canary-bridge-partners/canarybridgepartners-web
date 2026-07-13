@@ -940,3 +940,33 @@ box-shadow:0 15px 30px rgba(0,0,0,.15);
 
 
 }
+/* APP.JS ANIMATION SUPPORT */
+
+
+.reveal {
+
+opacity:0;
+
+transform:translateY(40px);
+
+transition:all .8s ease;
+
+}
+
+
+
+.reveal.visible {
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+
+.main-header.scrolled {
+
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
