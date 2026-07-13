@@ -1,9 +1,17 @@
-document.querySelector("form").addEventListener("submit", function(event) {
+document.addEventListener("DOMContentLoaded", () => {
 
-    event.preventDefault();
+    const form = document.querySelector("form");
 
-    alert(
-        "Thank you for contacting Canary Bridge Partners. We will contact you shortly."
-    );
+    form.addEventListener("submit", function(e) {
+
+        e.preventDefault();
+
+        alert(
+            "Thank you for contacting Canary Bridge Partners.\n\nWe will get back to you within 24 hours."
+        );
+
+        form.reset();
+
+    });
 
 });
