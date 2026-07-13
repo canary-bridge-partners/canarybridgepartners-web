@@ -273,3 +273,366 @@ h2{
     font-size:20px;
 
 }
+/* SOLUTIONS */
+
+
+.solutions{
+
+    background:#ffffff;
+
+}
+
+
+
+.solution-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:35px;
+
+}
+
+
+
+.solution-card{
+
+    background:#f8f8f6;
+
+    padding:45px 35px;
+
+    border-top:3px solid #d6b36a;
+
+    transition:.4s;
+
+}
+
+
+
+.solution-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.12);
+
+}
+
+
+
+.solution-card h3{
+
+    color:#10243e;
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+/* STATEMENT */
+
+
+.statement{
+
+    background:#10243e;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+
+
+.statement h2{
+
+    color:white;
+
+    font-size:52px;
+
+}
+
+
+
+.statement p{
+
+    font-size:22px;
+
+    color:#d6b36a;
+
+}
+
+
+
+
+
+/* INSIGHTS */
+
+
+.insights{
+
+    background:#f7f7f5;
+
+}
+
+
+
+.insight-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+.insight-grid div{
+
+    background:white;
+
+    padding:35px;
+
+    border-left:3px solid #d6b36a;
+
+}
+
+
+
+.insight-grid h3{
+
+    color:#10243e;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+/* CONTACT */
+
+
+.contact{
+
+    background:white;
+
+    text-align:center;
+
+}
+
+
+
+.contact p{
+
+    margin-bottom:35px;
+
+}
+
+
+
+form{
+
+    max-width:650px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+
+input,
+textarea{
+
+    padding:18px;
+
+    margin-bottom:18px;
+
+    border:1px solid #ddd;
+
+    font-size:16px;
+
+    font-family:inherit;
+
+}
+
+
+
+textarea{
+
+    min-height:160px;
+
+}
+
+
+
+button{
+
+    padding:18px;
+
+    background:#10243e;
+
+    color:white;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+
+
+button:hover{
+
+    background:#d6b36a;
+
+    color:#111;
+
+}
+
+
+
+
+
+/* FOOTER */
+
+
+footer{
+
+    background:#081526;
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+/* ANIMATION */
+
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:768px){
+
+
+.header{
+
+    padding:20px;
+
+    flex-direction:column;
+
+}
+
+
+
+nav{
+
+    margin-top:15px;
+
+}
+
+
+
+nav a{
+
+    margin:0 10px;
+
+    font-size:13px;
+
+}
+
+
+
+.hero h1{
+
+    font-size:40px;
+
+}
+
+
+
+.hero p{
+
+    font-size:17px;
+
+}
+
+
+
+section{
+
+    padding:75px 5%;
+
+}
+
+
+
+h2{
+
+    font-size:34px;
+
+}
+
+
+
+.statement h2{
+
+    font-size:38px;
+
+}
+
+
+
+}
