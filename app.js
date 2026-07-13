@@ -1,30 +1,23 @@
 /* =====================================
-CANARY BRIDGE PARTNERS
-PREMIUM INTERACTIVE ENGINE
+   CANARY BRIDGE PARTNERS
+   PREMIUM INTERACTIONS
 ===================================== */
 
 
-document.addEventListener(
-"DOMContentLoaded",
-()=>{
+document.addEventListener("DOMContentLoaded", () => {
 
 
-/* ===============================
-SCROLL REVEAL
-=============================== */
+
+/* SCROLL REVEAL */
 
 
-const revealElements =
-document.querySelectorAll(
-".island-card, .stat-box, .industry-card, .timeline-item, .insights-grid article"
+const revealElements = document.querySelectorAll(
+".advantage-card, .industry-card, .insights-grid article, .related-card, .contact-card, .timeline-item"
 );
 
 
 
-const revealObserver =
-new IntersectionObserver(
-
-(entries)=>{
+const observer = new IntersectionObserver((entries)=>{
 
 
 entries.forEach(entry=>{
@@ -33,9 +26,10 @@ entries.forEach(entry=>{
 if(entry.isIntersecting){
 
 
-entry.target.classList.add(
-"visible"
-);
+entry.target.classList.add("visible");
+
+
+observer.unobserve(entry.target);
 
 
 }
@@ -44,191 +38,51 @@ entry.target.classList.add(
 });
 
 
-},
-
-{
-
+},{
 threshold:0.15
+});
 
-}
-
-);
 
 
 
 revealElements.forEach(element=>{
 
 
-element.classList.add(
-"hidden"
-);
+element.classList.add("reveal");
 
 
-revealObserver.observe(element);
-
-
-});
-
-
-
-
-
-
-/* ===============================
-STAT COUNTER
-=============================== */
-
-
-const counters =
-document.querySelectorAll(
-".stat-box strong"
-);
-
-
-
-const counterObserver =
-new IntersectionObserver(
-
-(entries)=>{
-
-
-entries.forEach(entry=>{
-
-
-if(entry.isIntersecting){
-
-
-animateCounter(
-entry.target
-);
-
-
-counterObserver.unobserve(
-entry.target
-);
-
-
-}
+observer.observe(element);
 
 
 });
 
 
-},
-
-{
-
-threshold:.8
-
-}
-
-);
-
-
-
-counters.forEach(counter=>{
-
-counterObserver.observe(counter);
-
-});
 
 
 
 
-function animateCounter(element){
 
 
-const text =
-element.innerText;
+/* HEADER EFFECT */
 
 
-if(isNaN(parseInt(text))){
-
-return;
-
-}
-
-
-const target =
-parseInt(text);
-
-
-let current=0;
-
-
-const speed =
-target / 60;
+const header = document.querySelector(".main-header");
 
 
 
-const timer =
-setInterval(()=>{
+window.addEventListener("scroll",()=>{
 
 
-current += speed;
+if(window.scrollY > 60){
 
 
-if(current>=target){
-
-
-element.innerText =
-target;
-
-
-clearInterval(timer);
+header.classList.add("scrolled");
 
 
 }else{
 
 
-element.innerText =
-Math.floor(current);
-
-
-}
-
-
-},20);
-
-
-}
-
-
-
-
-
-
-
-
-/* ===============================
-HEADER EFFECT
-=============================== */
-
-
-const header =
-document.querySelector(
-".main-header"
-);
-
-
-
-window.addEventListener(
-"scroll",
-()=>{
-
-
-if(window.scrollY>80){
-
-
-header.style.background =
-"rgba(7,24,47,.92)";
-
-
-}else{
-
-
-header.style.background =
-"rgba(7,24,47,.35)";
+header.classList.remove("scrolled");
 
 
 }
@@ -243,27 +97,16 @@ header.style.background =
 
 
 
-/* ===============================
-SMOOTH ANCHORS
-=============================== */
+/* SMOOTH ANCHOR SCROLL */
 
 
-document
-.querySelectorAll(
-'a[href^="#"]'
-)
-.forEach(anchor=>{
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
 
 
-anchor.addEventListener(
-"click",
-function(e){
+anchor.addEventListener("click",function(e){
 
 
-const target =
-document.querySelector(
-this.getAttribute("href")
-);
+const target=document.querySelector(this.getAttribute("href"));
 
 
 
@@ -294,75 +137,48 @@ behavior:"smooth"
 
 
 
-/* ===============================
-FORM INTERACTION
-=============================== */
+
+/* FORM INTERACTION */
 
 
-const form =
-document.querySelector(
-".premium-form"
-);
+const forms=document.querySelectorAll("form");
 
 
 
-if(form){
+forms.forEach(form=>{
 
 
-form.addEventListener(
-"submit",
-(e)=>{
+form.addEventListener("submit",(e)=>{
 
 
 e.preventDefault();
 
 
 
-alert(
-"Thank you for contacting Canary Bridge Partners. We will contact you shortly."
-);
+const button=form.querySelector("button");
 
 
 
-form.reset();
+if(button){
 
 
+button.innerHTML="Message Sent ✓";
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+button.disabled=true;
 
 
 }
 
-);
+
+});
 
 
-}
+});
+
+
+
+
 
 
 
