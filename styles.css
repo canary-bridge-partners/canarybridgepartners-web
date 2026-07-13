@@ -1486,3 +1486,96 @@ transform:translateY(0);
 
 
 }
+/* ==========================================
+   HARD MOBILE FIX - HERO V6
+========================================== */
+
+@media (max-width:900px){
+
+html,
+body{
+
+    width:100%;
+    overflow-x:hidden;
+
+}
+
+
+.main-header{
+
+    position:absolute;
+    top:0;
+    left:0;
+    height:70px;
+
+}
+
+
+
+.hero-premium{
+
+    min-height:100vh !important;
+    height:auto !important;
+
+    padding:0 !important;
+
+    display:flex;
+
+    align-items:flex-start;
+
+}
+
+
+
+.hero-content{
+
+    width:100%;
+
+    padding:
+
+    120px 25px 40px !important;
+
+}
+
+
+
+.hero-content h1{
+
+    max-width:100%;
+
+    font-size:2.5rem !important;
+
+    line-height:1.05 !important;
+
+}
+
+
+
+.hero-description{
+
+    max-width:100%;
+
+    font-size:1rem !important;
+
+}
+
+
+
+.hero-buttons{
+
+    margin-top:20px !important;
+
+}
+
+
+
+.primary-btn,
+.secondary-btn{
+
+    padding:15px 20px !important;
+
+}
+
+
+
+}
