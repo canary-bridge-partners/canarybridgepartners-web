@@ -1322,3 +1322,106 @@ transform:translateY(0);
 
 
 }
+/* ==========================================
+   V6 RESPONSIVE STRUCTURE FIX
+========================================== */
+
+@media(max-width:900px){
+
+.main-header{
+    height:80px;
+    padding:15px 25px;
+    background:rgba(255,255,255,0.92);
+}
+
+
+.logo-area{
+    max-width:190px;
+}
+
+
+.logo{
+    font-size:1.05rem;
+    line-height:1.1;
+}
+
+
+.tagline{
+    letter-spacing:2px;
+}
+
+
+.main-nav{
+    display:none;
+}
+
+
+.language-selector{
+    display:none;
+}
+
+
+/* HERO */
+
+.hero-premium{
+    min-height:100svh;
+}
+
+
+.hero-content{
+    padding:120px 25px 50px;
+}
+
+
+.hero-content h1{
+    font-size:3rem;
+    line-height:1.05;
+}
+
+
+.hero-description{
+    font-size:1.05rem;
+}
+
+
+/* BUTTONS */
+
+.hero-buttons{
+    width:100%;
+}
+
+
+.primary-btn,
+.secondary-btn{
+    display:block;
+    width:100%;
+}
+
+
+
+/* CARDS */
+
+.pathway-grid{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+
+.pathway-card{
+    height:480px;
+    width:100%;
+}
+
+
+.card-content h3{
+    font-size:2.2rem;
+}
+
+
+.card-content p{
+    font-size:1rem;
+}
+
+
+}
