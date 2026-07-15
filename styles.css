@@ -1,79 +1,104 @@
 /* =====================================
- CANARY BRIDGE PARTNERS V8
- PREMIUM CSS
- PART 1/3 - CORE + HEADER + HERO
+CANARY BRIDGE PARTNERS V9 PREMIUM
+GLOBAL STYLE
 ===================================== */
 
 
 :root {
 
-    --cbp-blue: #0b3558;
-    --cbp-ocean: #0f6b85;
-    --cbp-sand: #e8d5b5;
-    --cbp-gold: #c8a45d;
-    --cbp-white: #ffffff;
-    --cbp-dark: #10212b;
-    --cbp-light: #f7f9fb;
+--cbp-navy: #071b33;
 
-    --shadow-soft: 0 20px 50px rgba(0,0,0,0.12);
+--cbp-blue: #0d3b66;
 
-    --radius-large: 24px;
-    --radius-medium: 16px;
+--cbp-gold: #c9a227;
 
-    --transition: all .35s ease;
+--cbp-sand: #d8c3a5;
+
+--cbp-light: #f7f5f1;
+
+--cbp-white: #ffffff;
+
+--cbp-text: #1c1c1c;
+
+--cbp-shadow: 0 20px 50px rgba(0,0,0,0.12);
+
+--cbp-radius: 18px;
+
 }
+
+
 
 
 
 /* RESET */
 
+
 * {
 
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
 
 }
+
+
+
 
 
 html {
 
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 
 }
+
+
+
 
 
 body {
 
-    font-family:
-    "Inter",
-    "Segoe UI",
-    Arial,
-    sans-serif;
+font-family:
 
-    background:
-    var(--cbp-light);
+"Inter",
+"Segoe UI",
+Arial,
+sans-serif;
 
-    color:
-    var(--cbp-dark);
+background:
 
-    overflow-x:hidden;
+var(--cbp-light);
+
+color:
+
+var(--cbp-text);
+
+line-height:1.6;
 
 }
+
+
+
 
 
 img {
 
-    max-width:100%;
-    display:block;
+max-width:100%;
+
+display:block;
 
 }
 
 
+
+
+
 a {
 
-    text-decoration:none;
-    color:inherit;
+text-decoration:none;
+
+color:inherit;
 
 }
 
@@ -82,110 +107,188 @@ a {
 
 
 /* =====================================
- HEADER
+HEADER
 ===================================== */
 
 
 .cbp-header {
 
-    position:fixed;
 
-    top:0;
-    left:0;
+width:100%;
 
-    width:100%;
+display:flex;
 
-    height:90px;
+justify-content:space-between;
 
-    display:flex;
+align-items:center;
 
-    align-items:center;
+padding:25px 7%;
 
-    justify-content:space-between;
 
-    padding:
-    0 7%;
+background:
 
-    z-index:1000;
+rgba(7,27,51,0.96);
 
-    background:
-    rgba(255,255,255,0.10);
 
-    backdrop-filter:
-    blur(14px);
+color:
+
+var(--cbp-white);
+
+
+position:relative;
+
+z-index:10;
+
 
 }
+
+
 
 
 
 .cbp-brand h2 {
 
-    color:white;
 
-    font-size:1.5rem;
+font-size:1.7rem;
 
-    letter-spacing:.5px;
+font-weight:700;
+
+letter-spacing:.5px;
+
 
 }
+
+
+
 
 
 .cbp-brand span {
 
-    color:
-    rgba(255,255,255,.8);
 
-    font-size:.75rem;
+display:block;
 
-    letter-spacing:2px;
+font-size:.85rem;
+
+color:
+
+var(--cbp-gold);
+
+margin-top:4px;
+
 
 }
+
 
 
 
 
 .cbp-navigation {
 
-    display:flex;
 
-    gap:30px;
+display:flex;
+
+gap:30px;
+
+align-items:center;
+
 
 }
+
+
 
 
 
 .cbp-navigation a {
 
-    color:white;
 
-    font-size:.95rem;
+font-size:.95rem;
 
-    transition:
-    var(--transition);
+color:white;
+
+transition:.3s;
+
 
 }
+
+
 
 
 
 .cbp-navigation a:hover {
 
-    color:
-    var(--cbp-gold);
+
+color:
+
+var(--cbp-gold);
+
 
 }
 
 
 
+
+
+.language-selector {
+
+
+display:flex;
+
+gap:12px;
+
+font-size:.85rem;
+
+
+}
+
+
+
+
+
+.language-selector span {
+
+
+opacity:.6;
+
+cursor:pointer;
+
+
+}
+
+
+
+
+
+.language-selector .active {
+
+
+opacity:1;
+
+color:
+
+var(--cbp-gold);
+
+
+}
+
+
+
+
+
 .cbp-menu {
 
-    display:none;
 
-    background:none;
+display:none;
 
-    border:none;
+background:none;
 
-    color:white;
+border:none;
 
-    font-size:2rem;
+font-size:2rem;
+
+color:white;
+
+cursor:pointer;
+
 
 }
 
@@ -194,41 +297,70 @@ a {
 
 
 /* =====================================
- HERO V8
+HERO
 ===================================== */
 
 
 .cbp-hero {
 
-    min-height:100vh;
 
-    position:relative;
+min-height:
 
-    display:flex;
+90vh;
 
-    align-items:center;
 
-    justify-content:center;
+position:relative;
 
-    text-align:center;
 
-    padding:
-    120px 20px 80px;
+display:flex;
 
-    overflow:hidden;
+align-items:center;
 
-    background:
+justify-content:center;
 
-    linear-gradient(
-    rgba(5,25,40,.55),
-    rgba(5,25,40,.75)
-    ),
 
-    url("images/canarias-hero.jpg");
+overflow:hidden;
 
-    background-size:cover;
 
-    background-position:center;
+color:white;
+
+
+}
+
+
+
+
+
+.cbp-hero-background {
+
+
+position:absolute;
+
+inset:0;
+
+
+background:
+
+linear-gradient(
+
+90deg,
+
+rgba(7,27,51,.92),
+
+rgba(7,27,51,.55)
+
+),
+
+url("images/canarias-hero.jpg");
+
+
+background-size:cover;
+
+background-position:center;
+
+
+z-index:0;
+
 
 }
 
@@ -238,225 +370,108 @@ a {
 
 .cbp-hero-content {
 
-    position:relative;
 
-    max-width:900px;
+position:relative;
 
-    color:white;
+z-index:1;
 
-    z-index:2;
+
+max-width:900px;
+
+
+text-align:center;
+
+
+padding:80px 25px;
+
 
 }
+
 
 
 
 
 .cbp-tag {
 
-    display:inline-block;
 
-    margin-bottom:25px;
+color:
 
-    font-size:.85rem;
+var(--cbp-gold);
 
-    letter-spacing:3px;
 
-    color:
-    var(--cbp-gold);
+font-size:.9rem;
+
+
+letter-spacing:2px;
+
+
+font-weight:600;
+
+
+margin-bottom:25px;
+
 
 }
+
 
 
 
 
 .cbp-hero h1 {
 
-    font-size:
-    clamp(2.5rem,5vw,4.5rem);
 
-    line-height:1.1;
+font-size:
 
-    margin-bottom:25px;
+clamp(2.5rem,5vw,4.5rem);
 
-    font-weight:700;
+
+line-height:1.1;
+
+
+margin-bottom:25px;
+
+
+font-weight:800;
+
 
 }
+
 
 
 
 
 .cbp-intro {
 
-    max-width:700px;
 
-    margin:
-    0 auto 40px;
+font-size:1.2rem;
 
-    font-size:1.2rem;
 
-    line-height:1.7;
+max-width:750px;
 
-    color:
-    rgba(255,255,255,.9);
 
-}
+margin:0 auto 40px;
 
 
+color:
 
-
-
-/* BUTTONS */
-
-
-.cbp-actions {
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:20px;
-
-    flex-wrap:wrap;
-
-}
-
-
-
-.cbp-button {
-
-    padding:
-    16px 35px;
-
-    border-radius:
-    50px;
-
-    font-weight:600;
-
-    transition:
-    var(--transition);
-
-}
-
-
-
-
-.cbp-button.primary {
-
-    background:
-    var(--cbp-gold);
-
-    color:
-    var(--cbp-dark);
-
-}
-
-
-
-.cbp-button.secondary {
-
-    border:
-    1px solid white;
-
-    color:white;
-
-}
-
-
-
-.cbp-button:hover {
-
-    transform:
-    translateY(-4px);
-
-}
-
-
-
-
-/* MOBILE */
-
-@media(max-width:900px){
-
-
-.cbp-navigation {
-
-    display:none;
-
-}
-
-
-.cbp-menu {
-
-    display:block;
-
-}
-
-
-
-.cbp-header {
-
-    padding:
-    0 25px;
-
-}
-
-
-
-.cbp-hero {
-
-    min-height:100svh;
-
-}
-
-
-
-.cbp-hero h1 {
-
-    font-size:2.4rem;
-
-}
-
-
-.cbp-intro {
-
-    font-size:1rem;
-
-}
+rgba(255,255,255,.9);
 
 
 }
 /* =====================================
- CANARY BRIDGE PARTNERS V8
- PREMIUM CSS
- PART 2/3 - SECTIONS + CARDS
+SECTION STRUCTURE
 ===================================== */
-
-
-
-/* GENERAL SECTIONS */
-
-.cbp-paths,
-.cbp-services,
-.cbp-canarias,
-.cbp-resources,
-.cbp-trust,
-.cbp-contact-cta {
-
-    padding:
-    100px 7%;
-
-}
-
 
 
 .cbp-section-title {
 
-    max-width:850px;
+text-align:center;
 
-    margin:
-    0 auto 60px;
+max-width:850px;
 
-    text-align:center;
+margin:0 auto 60px;
+
+padding:0 20px;
 
 }
 
@@ -464,18 +479,17 @@ a {
 
 .cbp-section-title span {
 
-    display:block;
+display:block;
 
-    color:
-    var(--cbp-ocean);
+font-size:.85rem;
 
-    font-size:.8rem;
+letter-spacing:2px;
 
-    letter-spacing:3px;
+font-weight:700;
 
-    font-weight:700;
+color:var(--cbp-gold);
 
-    margin-bottom:15px;
+margin-bottom:15px;
 
 }
 
@@ -483,13 +497,13 @@ a {
 
 .cbp-section-title h2 {
 
-    font-size:
-    clamp(2rem,4vw,3.2rem);
+font-size:clamp(2rem,4vw,3rem);
 
-    color:
-    var(--cbp-blue);
+color:var(--cbp-navy);
 
-    margin-bottom:20px;
+margin-bottom:20px;
+
+line-height:1.2;
 
 }
 
@@ -497,11 +511,9 @@ a {
 
 .cbp-section-title p {
 
-    color:#5c6870;
+font-size:1.1rem;
 
-    font-size:1.1rem;
-
-    line-height:1.7;
+color:#555;
 
 }
 
@@ -509,42 +521,136 @@ a {
 
 
 
-/* USER PATHS */
+/* =====================================
+TRUST VALUES
+===================================== */
+
+
+.cbp-trust-intro,
+.cbp-services,
+.cbp-canarias,
+.cbp-resources,
+.cbp-trust,
+.cbp-contact-cta {
+
+padding:100px 7%;
+
+}
+
+
+
+
+
+.cbp-values-grid {
+
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+
+}
+
+
+
+.cbp-value-card {
+
+
+background:white;
+
+padding:40px 30px;
+
+border-radius:var(--cbp-radius);
+
+box-shadow:var(--cbp-shadow);
+
+text-align:center;
+
+transition:.35s;
+
+
+}
+
+
+
+.cbp-value-card:hover {
+
+
+transform:translateY(-8px);
+
+
+}
+
+
+
+
+
+.cbp-icon {
+
+
+font-size:2.5rem;
+
+margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.cbp-value-card h3 {
+
+
+color:var(--cbp-navy);
+
+font-size:1.4rem;
+
+margin-bottom:15px;
+
+
+}
+
+
+
+
+
+/* =====================================
+PATH CARDS
+===================================== */
+
 
 .cbp-path-grid {
 
-    display:grid;
 
-    grid-template-columns:
-    repeat(2,1fr);
+display:grid;
 
-    gap:35px;
+grid-template-columns:repeat(2,1fr);
 
-    max-width:1100px;
+gap:35px;
 
-    margin:auto;
 
 }
+
+
 
 
 
 .cbp-path-card {
 
-    background:white;
 
-    padding:45px;
+background:white;
 
-    border-radius:
-    var(--radius-large);
+padding:45px 35px;
 
-    box-shadow:
-    var(--shadow-soft);
+border-radius:var(--cbp-radius);
 
-    transition:
-    var(--transition);
+box-shadow:var(--cbp-shadow);
 
-    border:
-    1px solid rgba(0,0,0,.05);
+transition:.35s;
+
 
 }
 
@@ -552,209 +658,189 @@ a {
 
 .cbp-path-card:hover {
 
-    transform:
-    translateY(-10px);
+
+transform:translateY(-10px);
+
 
 }
 
 
-
-.cbp-icon {
-
-    font-size:3rem;
-
-    margin-bottom:25px;
-
-}
 
 
 
 .cbp-path-card h3 {
 
-    font-size:1.8rem;
 
-    color:
-    var(--cbp-blue);
+font-size:1.6rem;
 
-    margin-bottom:20px;
+color:var(--cbp-navy);
+
+margin-bottom:15px;
+
 
 }
 
 
-
-.cbp-path-card p {
-
-    line-height:1.7;
-
-    color:#59656d;
-
-    margin-bottom:25px;
-
-}
 
 
 
 .cbp-path-card a {
 
-    color:
-    var(--cbp-ocean);
 
-    font-weight:700;
+display:inline-block;
 
-}
+margin-top:25px;
 
+color:var(--cbp-gold);
 
+font-weight:700;
 
-
-
-/* SERVICES */
-
-.cbp-services {
-
-    background:
-    white;
 
 }
 
+
+
+
+
+/* =====================================
+SERVICES GRID
+===================================== */
 
 
 .cbp-services-grid {
 
-    display:grid;
 
-    grid-template-columns:
-    repeat(3,1fr);
+display:grid;
 
-    gap:30px;
+grid-template-columns:repeat(3,1fr);
 
-    max-width:1200px;
+gap:30px;
 
-    margin:auto;
 
 }
+
+
 
 
 
 .cbp-service-card {
 
-    background:
-    linear-gradient(
-    145deg,
-    #ffffff,
-    #f1f6f8
-    );
 
-    padding:35px;
+background:white;
 
-    border-radius:
-    var(--radius-medium);
+padding:35px 30px;
 
-    box-shadow:
-    0 15px 40px rgba(0,0,0,.08);
+border-radius:var(--cbp-radius);
 
-    transition:
-    var(--transition);
+box-shadow:var(--cbp-shadow);
+
+transition:.35s;
+
 
 }
+
+
 
 
 
 .cbp-service-card:hover {
 
-    transform:
-    translateY(-8px);
+
+transform:translateY(-8px);
+
 
 }
+
+
 
 
 
 .cbp-service-card h3 {
 
-    color:
-    var(--cbp-blue);
 
-    font-size:1.35rem;
+color:var(--cbp-navy);
 
-    margin-bottom:15px;
+font-size:1.35rem;
+
+margin-bottom:15px;
+
 
 }
+
+
 
 
 
 .cbp-service-card p {
 
-    color:#59656d;
 
-    line-height:1.7;
-
-}
-
-
-
-
-
-/* CANARIAS SECTION */
-
-
-.cbp-canarias {
-
-    background:
-    linear-gradient(
-    180deg,
-    #f7f9fb,
-    #ffffff
-    );
+color:#555;
 
 }
 
+
+
+
+
+/* =====================================
+ISLAND CARDS
+===================================== */
 
 
 .cbp-islands-grid {
 
-    display:grid;
 
-    grid-template-columns:
-    repeat(3,1fr);
+display:grid;
 
-    gap:30px;
+grid-template-columns:repeat(3,1fr);
 
-    max-width:1100px;
+gap:30px;
 
-    margin:auto;
 
 }
+
+
 
 
 
 .cbp-island-card {
 
-    min-height:250px;
 
-    padding:35px;
+min-height:250px;
 
-    border-radius:
-    var(--radius-large);
+background:
 
-    display:flex;
+linear-gradient(
 
-    flex-direction:column;
+rgba(7,27,51,.55),
 
-    justify-content:end;
+rgba(7,27,51,.75)
 
-    color:white;
+),
 
-    background:
+url("images/island.jpg");
 
-    linear-gradient(
-    rgba(0,0,0,.35),
-    rgba(0,0,0,.55)
-    ),
 
-    url("images/island.jpg");
+background-size:cover;
 
-    background-size:cover;
+background-position:center;
 
-    background-position:center;
+
+border-radius:var(--cbp-radius);
+
+padding:35px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:end;
+
+
+color:white;
+
+box-shadow:var(--cbp-shadow);
+
 
 }
 
@@ -762,177 +848,144 @@ a {
 
 .cbp-island-card h3 {
 
-    font-size:2rem;
 
-    margin-bottom:10px;
+font-size:2rem;
+
+margin-bottom:10px;
+
 
 }
-
-
-
-
-
-/* RESOURCES */
+/* =====================================
+RESOURCES
+===================================== */
 
 
 .cbp-resource-grid {
 
-    display:grid;
+display:grid;
 
-    grid-template-columns:
-    repeat(3,1fr);
+grid-template-columns:repeat(3,1fr);
 
-    gap:30px;
-
-    max-width:1100px;
-
-    margin:auto;
+gap:30px;
 
 }
+
+
 
 
 
 .cbp-resource-card {
 
-    background:white;
 
-    padding:35px;
+background:white;
 
-    border-radius:
-    var(--radius-medium);
+padding:35px 30px;
 
-    box-shadow:
-    var(--shadow-soft);
+border-radius:var(--cbp-radius);
+
+box-shadow:var(--cbp-shadow);
+
+transition:.35s;
+
 
 }
+
+
+
+
+
+.cbp-resource-card:hover {
+
+
+transform:translateY(-8px);
+
+
+}
+
+
 
 
 
 .cbp-resource-card h3 {
 
-    color:
-    var(--cbp-blue);
 
-    margin-bottom:15px;
+color:var(--cbp-navy);
 
-}
+font-size:1.4rem;
 
-
-
-.cbp-resource-card p {
-
-    color:#59656d;
-
-    line-height:1.6;
-
-}
-
-
-
-
-
-/* TABLET + MOBILE */
-
-
-@media(max-width:900px){
-
-
-.cbp-path-grid,
-.cbp-services-grid,
-.cbp-islands-grid,
-.cbp-resource-grid {
-
-    grid-template-columns:1fr;
-
-}
-
-
-
-.cbp-path-card {
-
-    padding:30px;
-
-}
-
-
-
-.cbp-path-card h3 {
-
-    font-size:1.5rem;
-
-}
-
-
-
-.cbp-services,
-.cbp-paths,
-.cbp-canarias,
-.cbp-resources {
-
-    padding:
-    70px 25px;
-
-}
+margin-bottom:15px;
 
 
 }
+
+
+
+
+
 /* =====================================
- CANARY BRIDGE PARTNERS V8
- PREMIUM CSS
- PART 3/3 - FINISH + ANIMATIONS
+TRUST SECTION
 ===================================== */
-
-
-/* TRUST SECTION */
 
 
 .cbp-trust {
 
-    text-align:center;
 
-    background:
+background:
 
-    linear-gradient(
-    135deg,
-    var(--cbp-blue),
-    var(--cbp-ocean)
-    );
+linear-gradient(
 
-    color:white;
+135deg,
 
-    padding:
-    100px 7%;
+var(--cbp-navy),
+
+var(--cbp-blue)
+
+);
+
+
+color:white;
+
+padding:100px 7%;
+
+
+text-align:center;
+
 
 }
+
+
 
 
 
 .cbp-trust h2 {
 
-    max-width:900px;
 
-    margin:
-    0 auto 25px;
+font-size:clamp(2rem,4vw,3rem);
 
-    font-size:
-    clamp(2rem,4vw,3.5rem);
+max-width:900px;
+
+margin:0 auto 25px;
+
+line-height:1.2;
+
 
 }
+
+
 
 
 
 .cbp-trust p {
 
-    max-width:800px;
 
-    margin:auto;
+max-width:850px;
 
-    line-height:1.8;
+margin:auto;
 
-    font-size:1.15rem;
+font-size:1.15rem;
 
-    color:
-    rgba(255,255,255,.9);
+color:rgba(255,255,255,.85);
+
 
 }
 
@@ -940,76 +993,168 @@ a {
 
 
 
-/* CONTACT CTA */
+.cbp-trust-points {
+
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+margin-top:60px;
+
+
+}
+
+
+
+
+
+.cbp-trust-points div {
+
+
+background:
+
+rgba(255,255,255,.08);
+
+
+padding:30px;
+
+border-radius:var(--cbp-radius);
+
+
+}
+
+
+
+
+
+.cbp-trust-points strong {
+
+
+display:block;
+
+font-size:2rem;
+
+color:var(--cbp-gold);
+
+
+}
+
+
+
+
+
+.cbp-trust-points span {
+
+
+display:block;
+
+font-size:1.3rem;
+
+font-weight:700;
+
+margin:10px 0;
+
+
+}
+
+
+
+
+
+/* =====================================
+CONTACT CTA
+===================================== */
 
 
 .cbp-contact-cta {
 
-    text-align:center;
 
-    background:white;
+padding:100px 7%;
+
+text-align:center;
+
+
+background:white;
+
 
 }
+
+
 
 
 
 .cbp-contact-cta h2 {
 
-    color:
-    var(--cbp-blue);
 
-    font-size:
-    clamp(2rem,4vw,3rem);
+font-size:clamp(2rem,4vw,3rem);
 
-    margin-bottom:20px;
+color:var(--cbp-navy);
+
+margin-bottom:20px;
+
 
 }
+
+
 
 
 
 .cbp-contact-cta p {
 
-    color:#59656d;
 
-    margin-bottom:35px;
+font-size:1.1rem;
 
-    font-size:1.1rem;
+margin-bottom:35px;
+
+color:#555;
+
 
 }
+
+
 
 
 
 .cbp-contact-cta a {
 
-    display:inline-block;
 
-    background:
-    var(--cbp-gold);
+display:inline-block;
 
-    color:
-    var(--cbp-dark);
+padding:16px 35px;
 
-    padding:
-    17px 40px;
+border-radius:50px;
 
-    border-radius:50px;
 
-    font-weight:700;
+background:
 
-    transition:
-    var(--transition);
+var(--cbp-gold);
+
+
+color:
+
+var(--cbp-navy);
+
+
+font-weight:700;
+
+
+transition:.3s;
+
 
 }
+
+
 
 
 
 .cbp-contact-cta a:hover {
 
-    transform:
-    translateY(-5px);
 
-    box-shadow:
-    0 15px 35px rgba(0,0,0,.18);
+transform:translateY(-4px);
+
 
 }
 
@@ -1017,29 +1162,22 @@ a {
 
 
 
-/* FOOTER */
+/* =====================================
+BUTTONS
+===================================== */
 
 
-footer {
-
-    background:
-    #081c29;
-
-    color:white;
-
-    padding:
-    60px 7%;
-
-    text-align:center;
-
-}
+.cbp-actions {
 
 
+display:flex;
 
-footer p {
+justify-content:center;
 
-    color:
-    rgba(255,255,255,.7);
+gap:20px;
+
+flex-wrap:wrap;
+
 
 }
 
@@ -1047,40 +1185,360 @@ footer p {
 
 
 
-/* SCROLL ANIMATION READY */
+.cbp-button {
 
 
-.cbp-path-card,
+padding:16px 35px;
+
+border-radius:50px;
+
+font-weight:700;
+
+transition:.3s;
+
+
+}
+
+
+
+
+
+.cbp-button.primary {
+
+
+background:
+
+var(--cbp-gold);
+
+color:
+
+var(--cbp-navy);
+
+
+}
+
+
+
+
+
+.cbp-button.secondary {
+
+
+border:2px solid white;
+
+color:white;
+
+
+}
+
+
+
+
+
+.cbp-button:hover {
+
+
+transform:translateY(-5px);
+
+
+}
+
+
+
+
+
+/* =====================================
+FINAL MESSAGE
+===================================== */
+
+
+.cbp-final-message {
+
+
+padding:120px 7%;
+
+background:
+
+var(--cbp-light);
+
+text-align:center;
+
+
+}
+
+
+
+
+
+.cbp-final-content {
+
+
+max-width:850px;
+
+margin:auto;
+
+
+}
+
+
+
+
+
+.cbp-final-content span {
+
+
+color:
+
+var(--cbp-gold);
+
+letter-spacing:2px;
+
+font-weight:700;
+
+
+}
+
+
+
+
+
+.cbp-final-content h2 {
+
+
+font-size:clamp(2rem,4vw,3.2rem);
+
+color:
+
+var(--cbp-navy);
+
+margin:20px 0;
+
+
+}
+/* =====================================
+FOOTER PREMIUM
+===================================== */
+
+
+.main-footer {
+
+
+background:
+
+var(--cbp-navy);
+
+
+color:white;
+
+
+padding:70px 7% 35px;
+
+
+display:grid;
+
+
+grid-template-columns:2fr 1fr 1fr;
+
+
+gap:40px;
+
+
+}
+
+
+
+
+
+.footer-brand h3 {
+
+
+font-size:1.8rem;
+
+
+margin-bottom:15px;
+
+
+}
+
+
+
+
+
+.footer-brand p {
+
+
+color:rgba(255,255,255,.75);
+
+
+}
+
+
+
+
+
+.footer-links {
+
+
+display:flex;
+
+
+flex-direction:column;
+
+
+gap:15px;
+
+
+}
+
+
+
+
+
+.footer-links a {
+
+
+color:white;
+
+
+transition:.3s;
+
+
+}
+
+
+
+
+
+.footer-links a:hover {
+
+
+color:var(--cbp-gold);
+
+
+}
+
+
+
+
+
+.footer-location {
+
+
+display:flex;
+
+
+align-items:center;
+
+
+justify-content:center;
+
+
+gap:15px;
+
+
+font-weight:700;
+
+
+}
+
+
+
+
+
+.footer-location span {
+
+
+font-size:2rem;
+
+
+color:var(--cbp-gold);
+
+
+}
+
+
+
+
+
+.copyright {
+
+
+grid-column:1/-1;
+
+
+text-align:center;
+
+
+margin-top:40px;
+
+
+padding-top:25px;
+
+
+border-top:
+
+1px solid rgba(255,255,255,.15);
+
+
+font-size:.9rem;
+
+
+color:rgba(255,255,255,.6);
+
+
+}
+
+
+
+
+
+
+/* =====================================
+SMOOTH ANIMATIONS
+===================================== */
+
+
 .cbp-service-card,
-.cbp-island-card,
-.cbp-resource-card {
+.cbp-resource-card,
+.cbp-value-card,
+.cbp-path-card,
+.cbp-island-card {
 
-    animation:
-    cbpFadeUp .8s ease both;
+
+animation:
+
+fadeUp .8s ease both;
+
 
 }
 
 
 
-@keyframes cbpFadeUp {
+
+
+@keyframes fadeUp {
 
 
 from {
 
-    opacity:0;
 
-    transform:
-    translateY(35px);
+opacity:0;
+
+
+transform:translateY(30px);
+
 
 }
 
 
 to {
 
-    opacity:1;
 
-    transform:
-    translateY(0);
+opacity:1;
+
+
+transform:translateY(0);
+
 
 }
 
@@ -1091,49 +1549,17 @@ to {
 
 
 
-/* PREMIUM HOVER EFFECT */
+
+/* =====================================
+GLOBAL PREMIUM DETAILS
+===================================== */
 
 
-.cbp-service-card,
-.cbp-resource-card {
-
-    position:relative;
-
-    overflow:hidden;
-
-}
+section {
 
 
+position:relative;
 
-.cbp-service-card::before,
-.cbp-resource-card::before {
-
-    content:"";
-
-    position:absolute;
-
-    top:0;
-
-    left:-100%;
-
-    width:100%;
-
-    height:3px;
-
-    background:
-    var(--cbp-gold);
-
-    transition:
-    .4s ease;
-
-}
-
-
-
-.cbp-service-card:hover::before,
-.cbp-resource-card:hover::before {
-
-    left:0;
 
 }
 
@@ -1141,74 +1567,370 @@ to {
 
 
 
-/* FINAL MOBILE OPTIMIZATION */
+section::after {
 
 
-@media(max-width:600px){
+content:"";
+
+
+display:block;
+
+
+clear:both;
+
+
+}
+
+
+
+
+
+h1,
+h2,
+h3 {
+
+
+letter-spacing:-.5px;
+
+
+}
+
+
+
+
+
+::selection {
+
+
+background:
+
+var(--cbp-gold);
+
+
+color:
+
+var(--cbp-navy);
+
+
+}
+/* =====================================
+RESPONSIVE MOBILE DESIGN
+===================================== */
+
+
+@media (max-width: 1000px) {
+
+
+.cbp-navigation {
+
+display:none;
+
+}
+
+
+.language-selector {
+
+display:none;
+
+}
+
+
+.cbp-menu {
+
+display:block;
+
+}
+
+
+
+
+
+.cbp-values-grid,
+.cbp-services-grid,
+.cbp-resource-grid,
+.cbp-islands-grid {
+
+
+grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+
+
+.cbp-trust-points {
+
+
+grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+
+
+.main-footer {
+
+
+grid-template-columns:1fr;
+
+
+text-align:center;
+
+
+}
+
+
+
+
+
+.footer-location {
+
+
+justify-content:center;
+
+
+}
+
+
+
+}
+
+
+
+
+
+@media (max-width:700px) {
 
 
 .cbp-header {
 
-    height:75px;
+
+padding:20px 5%;
+
 
 }
+
+
 
 
 
 .cbp-brand h2 {
 
-    font-size:1.15rem;
+
+font-size:1.35rem;
+
 
 }
 
 
-
-.cbp-brand span {
-
-    font-size:.6rem;
-
-}
 
 
 
 .cbp-hero {
 
-    padding-left:20px;
 
-    padding-right:20px;
+min-height:100vh;
+
 
 }
 
 
 
-.cbp-tag {
 
-    font-size:.65rem;
 
-    letter-spacing:2px;
+.cbp-hero-content {
+
+
+padding:60px 20px;
+
 
 }
+
+
+
+
+
+.cbp-hero h1 {
+
+
+font-size:2.3rem;
+
+
+}
+
+
+
+
+
+.cbp-intro {
+
+
+font-size:1rem;
+
+
+}
+
+
+
+
+
+.cbp-actions {
+
+
+flex-direction:column;
+
+
+align-items:center;
+
+
+}
+
+
 
 
 
 .cbp-button {
 
-    width:100%;
 
-    max-width:320px;
+width:100%;
+
+
+max-width:330px;
+
+
+text-align:center;
+
 
 }
 
 
 
-.cbp-contact-cta a {
 
-    width:100%;
 
-    max-width:320px;
+.cbp-trust-intro,
+.cbp-services,
+.cbp-canarias,
+.cbp-resources,
+.cbp-trust,
+.cbp-contact-cta {
+
+
+padding:70px 5%;
+
 
 }
 
 
 
-     }
+
+
+.cbp-values-grid,
+.cbp-path-grid,
+.cbp-services-grid,
+.cbp-resource-grid,
+.cbp-islands-grid,
+.cbp-trust-points {
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+
+
+.cbp-path-card,
+.cbp-service-card,
+.cbp-resource-card,
+.cbp-value-card {
+
+
+padding:30px 25px;
+
+
+}
+
+
+
+
+
+.cbp-island-card {
+
+
+min-height:220px;
+
+
+}
+
+
+
+
+
+.cbp-section-title h2 {
+
+
+font-size:2rem;
+
+
+}
+
+
+
+
+
+.main-footer {
+
+
+padding:60px 5% 30px;
+
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+/* =====================================
+IMAGE PLACEHOLDER EFFECT
+===================================== */
+
+
+.cbp-hero-background {
+
+
+background-attachment:
+
+fixed;
+
+
+}
+
+
+
+@media(max-width:700px){
+
+
+.cbp-hero-background {
+
+
+background-attachment:
+
+scroll;
+
+
+}
+
+
+}
