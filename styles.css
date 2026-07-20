@@ -2135,3 +2135,159 @@ font-size:2.2rem;
 
 
 }
+/* =====================================
+RELOCATION PAGE PREMIUM V1
+===================================== */
+
+
+.cbp-section {
+
+padding:100px 8%;
+
+}
+
+
+
+
+
+.cbp-section .cbp-section-title {
+
+max-width:850px;
+
+margin:0 auto 60px;
+
+}
+
+
+
+
+
+.cbp-section .cbp-service-card {
+
+
+background:white;
+
+border-radius:24px;
+
+padding:35px;
+
+box-shadow:
+
+0 15px 40px rgba(0,0,0,.08);
+
+
+transition:.35s;
+
+
+}
+
+
+
+
+
+.cbp-section .cbp-service-card:hover {
+
+
+transform:translateY(-10px);
+
+
+box-shadow:
+
+0 25px 60px rgba(0,0,0,.15);
+
+
+}
+
+
+
+
+
+.cbp-section .cbp-service-card h3 {
+
+
+color:
+
+#071b33;
+
+
+margin-bottom:18px;
+
+
+}
+
+
+
+
+
+.cbp-section .cbp-service-card p {
+
+
+color:#555;
+
+
+line-height:1.7;
+
+
+}
+
+
+
+
+
+/* RELOCATION TRUST */
+
+
+.cbp-trust {
+
+
+padding:90px 8%;
+
+
+text-align:center;
+
+
+}
+
+
+
+
+
+.cbp-trust h2 {
+
+
+font-size:
+
+clamp(2rem,4vw,3rem);
+
+
+}
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:700px){
+
+
+.cbp-section {
+
+
+padding:70px 5%;
+
+
+}
+
+
+.cbp-section .cbp-service-card {
+
+
+padding:25px;
+
+
+}
+
+
+}
