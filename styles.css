@@ -1934,3 +1934,204 @@ scroll;
 
 
 }
+/* =====================================
+SERVICES PAGE PREMIUM V1
+===================================== */
+
+
+/* PAGE HERO */
+
+
+.cbp-page-hero {
+
+
+min-height:70vh;
+
+
+display:flex;
+
+
+align-items:center;
+
+
+padding:120px 8%;
+
+
+background:
+
+
+linear-gradient(
+
+90deg,
+
+rgba(7,27,51,.95),
+
+rgba(7,27,51,.65)
+
+),
+
+url("images/canarias-hero.jpg");
+
+
+background-size:cover;
+
+
+background-position:center;
+
+
+color:white;
+
+
+}
+
+
+
+
+.cbp-page-hero div {
+
+
+max-width:850px;
+
+
+}
+
+
+
+
+
+.cbp-page-hero h1 {
+
+
+font-size:clamp(2.5rem,5vw,4rem);
+
+
+line-height:1.1;
+
+
+margin:25px 0;
+
+
+}
+
+
+
+
+
+.cbp-page-hero p {
+
+
+font-size:1.2rem;
+
+
+max-width:700px;
+
+
+color:rgba(255,255,255,.9);
+
+
+}
+
+
+
+
+
+/* SERVICE CARDS */
+
+
+.cbp-services .cbp-service-card {
+
+
+min-height:260px;
+
+
+display:flex;
+
+
+flex-direction:column;
+
+
+justify-content:center;
+
+
+border-top:4px solid var(--cbp-gold);
+
+
+}
+
+
+
+
+
+.cbp-services .cbp-service-card:hover {
+
+
+box-shadow:
+
+0 25px 60px rgba(0,0,0,.15);
+
+
+transform:translateY(-12px);
+
+
+}
+
+
+
+
+
+.cbp-services .cbp-service-card h3 {
+
+
+font-size:1.5rem;
+
+
+}
+
+
+
+
+
+/* TRUST BLOCK SERVICES */
+
+
+.cbp-trust {
+
+
+margin-top:40px;
+
+
+}
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:700px){
+
+
+.cbp-page-hero {
+
+
+min-height:60vh;
+
+
+padding:90px 5%;
+
+
+}
+
+
+
+.cbp-page-hero h1 {
+
+
+font-size:2.2rem;
+
+
+}
+
+
+}
