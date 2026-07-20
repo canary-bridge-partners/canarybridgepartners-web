@@ -2291,3 +2291,168 @@ padding:25px;
 
 
 }
+/* =====================================
+LIFE IN CANARIAS PREMIUM V1
+===================================== */
+
+
+.cbp-section{
+
+padding:100px 8%;
+
+}
+
+
+
+.cbp-section-title{
+
+max-width:900px;
+
+margin:0 auto 60px;
+
+text-align:center;
+
+}
+
+
+
+.cbp-section-title span{
+
+color:#c9a227;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+}
+
+
+
+.cbp-services-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+}
+
+
+
+.cbp-services-grid .cbp-service-card{
+
+background:white;
+
+border-radius:25px;
+
+padding:35px;
+
+box-shadow:
+
+0 20px 45px rgba(0,0,0,.08);
+
+transition:.35s;
+
+border-bottom:4px solid #c9a227;
+
+}
+
+
+
+.cbp-services-grid .cbp-service-card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:
+
+0 30px 70px rgba(0,0,0,.15);
+
+}
+
+
+
+.cbp-services-grid h3{
+
+font-size:1.5rem;
+
+color:#071b33;
+
+}
+
+
+
+.cbp-services-grid p{
+
+line-height:1.7;
+
+color:#555;
+
+}
+
+
+
+/* CONTACT FINAL */
+
+.cbp-contact-cta{
+
+padding:100px 8%;
+
+text-align:center;
+
+background:#071b33;
+
+color:white;
+
+}
+
+
+
+.cbp-contact-cta h2{
+
+font-size:clamp(2rem,4vw,3rem);
+
+}
+
+
+
+.cbp-contact-cta a{
+
+display:inline-block;
+
+margin-top:30px;
+
+padding:16px 35px;
+
+background:#c9a227;
+
+color:white;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:700;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+.cbp-section{
+
+padding:70px 5%;
+
+}
+
+
+.cbp-services-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
